@@ -4,6 +4,7 @@ pipeline {
     stage('Static Analysis') {
       steps {
         sh '${scannerHome}/bin/sonar-scanner'
+        input(message: 'Contimue to next step?', ok: 'yes')
       }
     }
 
@@ -13,8 +14,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    StaticCodeAnalysis = '1'
   }
 }
