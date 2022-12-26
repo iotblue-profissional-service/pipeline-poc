@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh '${scannerHome}/bin/sonar-scanner'
         input(message: 'Contimue to next step?', ok: 'yes')
+        waitForQualityGate true
       }
     }
 
