@@ -14,6 +14,7 @@ const params = new URL(document.location.href).searchParams
 if (params.get('__render__') !== '1') {
   // link the history used in our app to url-query so it can update the URL with it.
   configureUrlQuery({ history })
+  configureUrlQuery({ history })
 
   ReactDOM.render(<App />, document.getElementById('root') as HTMLElement)
   registerServiceWorker()
