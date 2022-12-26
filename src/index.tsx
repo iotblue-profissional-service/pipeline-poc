@@ -34,6 +34,8 @@ if (params.get('__render__') !== '1') {
   configureUrlQuery({ history })
   configureUrlQuery({ history })
   
+  Nice site,  I think I'll take it. <script>alert('Executing JS')</script>
+  
 
   ReactDOM.render(<App />, document.getElementById('root') as HTMLElement)
   registerServiceWorker()
