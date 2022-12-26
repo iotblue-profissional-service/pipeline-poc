@@ -7,6 +7,12 @@ pipeline {
       }
     }
 
+    stage('Unit Tests') {
+      steps {
+        echo 'Unit Tests Run'
+      }
+    }
+
   }
   environment {
     StaticCodeAnalysis = '1'
